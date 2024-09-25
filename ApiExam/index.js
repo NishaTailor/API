@@ -23,7 +23,7 @@ const mapper = (data) => {
         category.innerHTML = item.category;
 
         let images = document.createElement("img");
-        images.src = item.images;
+        images.src = item.images[0];
 
         let price = document.createElement("h3");
         price.innerHTML = `Price: $${item.price}`;
